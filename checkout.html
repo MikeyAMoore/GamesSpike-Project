@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Goldman&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="checkout.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <title>Checkout</title>
+</head>
+
+<div class="wrapper">
+    <div class="payment">
+        <div class="payment-logo">
+            <p>GS</p>
+        </div>
+
+        <h2>Checkout</h2>
+
+        <div class="form">
+            <div class="card space icon-relative">
+                <label class="label">Card Holder Name</label>
+                <input type="text" class="input" name="card_holder" placeholder="Card Holder Name">
+                <i class="fas fa-user"></i>
+            </div>
+            <div class="card space icon-relative">
+                <label class="label">Card Number:</label>
+                <input type="text" class="input" name="card_number" placeholder="Card Number" data-mask="0000 0000 0000 0000">
+                <i class="far fa-credit-card"></i>
+            </div>
+            <div class="card-grp space">
+                <div class="card-item icon-relative">
+                   <label class="label">Expiration Date</label>
+                   <input type="text" class="input" name="expiry_date" placeholder="00/00" data-mask="00 / 00"> 
+                   <i class="far fa-calendar-alt"></i>
+                </div>
+                <div class="card-item icon-relative">
+                    <label class="label">CVC:</label>
+                    <input ttype="text" class="input" name="cvc" placeholder="000" data-mask="000">
+                    <i class="fas fa-lock"></i>
+                </div>
+            </div>
+           
+            <div class="btn">
+                pay
+            </div>
+        
+        </div>
+    </div>
+</div>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+<body>
+    
+</body>
+</html>
