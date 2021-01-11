@@ -1,5 +1,6 @@
-:root {
-    --primary: white;
+body {
+        font-family: 'Goldman', cursive;
+      
 }
 
 .btn {
@@ -11,16 +12,16 @@
 }
 
 .btn--primary {
-    background-color: var(--primary);
-    color: black;
-    border: 1px solid var(--primary);
+    background-color: purple;
+    color: purple;
+    border: 1px solid purple;
 }
 
 .btn--outline {
     background-color: transparent;
-    color: white;
+    color: purple;
     padding: 8px 20px;
-    border: 1px solid var(--primary);
+    border: 1px solid purple;
     transition: all 0.3s ease-out;
 }
 
