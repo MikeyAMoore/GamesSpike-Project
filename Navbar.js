@@ -3,9 +3,15 @@ import { Button } from './Button';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
 import * as FaIcons from "react-icons/fa";
+import * as AiIcons from "react-icons/ai";
+import { SidebarData } from './SidebarData';
+import { IconContext } from 'react-icons';
 
 
 function Navbar() {
+  const [sidebar, setSidebar] = useState(false)
+  const showSidebar = () => setSidebar(!sidebar)
+
   const [click, setClick] = useState(false);
   const [button, setButton] = useState(true);
 
@@ -28,11 +34,12 @@ function Navbar() {
 
   return (
     <>
+    <IconContext.Provider value={{ color: '#fff'}}>
       <nav className='navbar'>
-        <div className='navbar-container'>
-          <Link t="#" className='menu-bars'>
-            <FaIcons.FaBars/>
+      <Link t="#" className='menu-bars'>
+            <FaIcons.FaBars onClick={showSidebar} />
           </Link>
+        <div className='navbar-container'>
           <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
             GS
             <i class="fas fa-gamepad"></i>
@@ -78,6 +85,27 @@ function Navbar() {
           {button && <Button buttonStyle='btn--outline'>LOG IN</Button>}
         </div>
       </nav>
+      <nav className={sidebar ? 'bar-menu active' : 'bar-menu'}>
+        <ul className='bar-menu-items' onClick={showSidebar}>
+          <li className="navbar-toggle">
+            <Link to="#" className='menu-bars'>
+              <AiIcons.AiOutlineClose />
+            </Link>
+          </li>
+          {SidebarData.map((item, index) =>{
+            return (
+              <li key={index} className={item.cName}>
+                <Link to={item.path}>
+                  {item.icon}
+                  <span>{item.title}</span>
+                  <span>{item.title}</span>
+                </Link>
+              </li>
+            )
+          })}
+        </ul>
+      </nav>
+      </IconContext.Provider>
     </>
   );
 }
