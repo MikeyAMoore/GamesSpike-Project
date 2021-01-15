@@ -98,7 +98,6 @@ function Navbar() {
                 <Link to={item.path}>
                   {item.icon}
                   <span>{item.title}</span>
-                  <span>{item.title}</span>
                 </Link>
               </li>
             )
