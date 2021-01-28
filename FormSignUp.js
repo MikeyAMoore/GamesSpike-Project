@@ -13,7 +13,7 @@ const FormSignup = ({ submitForm }) => {
     <div className='form-content-right'>
       <form onSubmit={handleSubmit} className='form' noValidate>
         <h1>
-          Jump into the world of indie gaming! Sign up! It's free!
+          Join now and support the thousands of Indie gamer creators!
         </h1>
         <div className='form-inputs'>
           <label className='form-label'>Username</label>
