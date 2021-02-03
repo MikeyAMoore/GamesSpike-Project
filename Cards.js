@@ -14,6 +14,7 @@ function Cards() {
               text='Explore a sprawling, ever-changing castle... assuming you’re able to fight your way past its keepers in 2D souls-lite combat!'
               label='Dead Cells'
               path='/services'
+              link='https://www.youtube.com/watch?v=gX4cGcwmdsY'
             />
             <CardItem
               src='images/stanley.jpg'
