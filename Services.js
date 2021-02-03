@@ -73,8 +73,10 @@ const Services= ({ submitForm }) => {
           Already have an account? Login <a href='#'>here</a>
         </span>
       </form>
+      <Footer></Footer>
     </div>
   );
+  <Footer></Footer>
 };
 
 function services() {
