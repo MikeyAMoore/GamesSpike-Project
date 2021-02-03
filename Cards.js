@@ -37,6 +37,7 @@ function Cards() {
               text='Dive into a very emotional 2D animated comic book adventure, mixing exploration, action and puzzles!'
               label='Valiant Hearts'
               path='/products'
+              link='https://www.youtube.com/watch?v=MP8q5F6dFqQ'
             />
             <CardItem
               src='images/shovel.jpg'
