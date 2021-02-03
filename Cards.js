@@ -21,6 +21,7 @@ function Cards() {
               text='First person exploration game with limitless options!'
               label='The Stanley Parable'
               path='/services'
+              link='https://www.youtube.com/watch?v=fBtX0S2J32Y'
             />
           </ul>
           <ul className='cards__items'>
