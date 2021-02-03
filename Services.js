@@ -12,6 +12,7 @@ const Services= ({ submitForm }) => {
   );
 
   return (
+    
     <div className='form-content-right'>
       <form onSubmit={handleSubmit} className='form' noValidate>
         <h1>
@@ -74,7 +75,14 @@ const Services= ({ submitForm }) => {
       </form>
     </div>
   );
-  <><Footer /></>
 };
+
+function services() {
+  return (
+    <>
+      <Footer />
+    </>
+  );
+}
 
 export default Services;
