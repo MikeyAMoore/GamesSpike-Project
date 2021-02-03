@@ -44,6 +44,7 @@ function Cards() {
               text='Bash your way through a fantastical, 8-bit world-class action-adventure gameplay!'
               label='Shovel Knight'
               path='/sign-up'
+              link='https://www.youtube.com/watch?v=jo-uuawy9Ok'
             />
           </ul>
         </div>
