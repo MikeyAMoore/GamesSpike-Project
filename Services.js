@@ -3,6 +3,7 @@ import validate from '../../validateInfo';
 import useForm from '../../useForm';
 import '../../Form.css';
 import '../../Form';
+import Footer from '../Footer';
 
 const Services= ({ submitForm }) => {
   const { handleChange, handleSubmit, values, errors } = useForm(
@@ -73,6 +74,7 @@ const Services= ({ submitForm }) => {
       </form>
     </div>
   );
+  <><Footer /></>
 };
 
 export default Services;
