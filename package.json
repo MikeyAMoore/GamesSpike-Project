@@ -1,39 +1,29 @@
 {
   "name": "gamesspike",
-  "version": "0.1.0",
-  "private": true,
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
   "dependencies": {
-    "@testing-library/jest-dom": "^5.11.8",
-    "@testing-library/react": "^11.2.3",
-    "@testing-library/user-event": "^12.6.0",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1",
-    "react-router-dom": "^5.2.0",
-    "react-scripts": "4.0.1",
-    "web-vitals": "^0.2.4"
+    "axios": "^0.21.1",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-fileupload": "^1.2.1",
+    "formidable": "^1.2.2",
+    "node": "^15.7.0",
+    "react-icons": "^4.1.0",
+    "react-redux": "^7.2.2",
+    "redux": "^4.0.5"
+  },
+  "devDependencies": {
+    "concurrently": "^5.3.0",
+    "nodemon": "^2.0.7"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "start": "node serve.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm server\" \"npm run client\""
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  }
+  "author": "Mike Moore <mikeyandrewmoore@gmail.com> (https://github.com/MikeyAMoore)",
+  "license": "ISC"
 }
